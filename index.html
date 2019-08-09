@@ -1,0 +1,94 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<nav class="navbar navbar-inverse"> 
+ <div class="container-fluid">    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">TIDIANI GUISSE</a>
+    </div>
+   <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://github.com/tguisse">PROJECTS</a></li>
+      <li><a href="login/login.html">RESUME</a></li> 
+   </ul>
+</div>
+</nav>
+<div>
+  <script type="text/javascript">
+  
+var i = 0;                    /* Declaring 3 variables i, images and time */
+var images = [];
+var time = 2000;            /* time set to 2 seconds */
+
+/* All images in arrrays*/
+
+images[0] = 'im1.jpg';
+images[1] = 'im2.jpg';
+
+/* function that allows images to change */
+
+function changeImg(){
+    document.slideshow.src = images[i];
+
+    if(i < images.length - 1){
+      i++;
+    } else {
+      i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+  }
+
+  window.onload = changeImg;
+
+</script> 
+
+<img name="slideshow" width="800" height="500" >
+
+<style type="text/css">
+
+h1 {
+  text-align: center;                 /* Heading */
+  color: blue;
+   background-color: #cccccc;
+}
+body{                                   /* Background color */
+  background-color: darkgray;
+
+}
+img{                            /* center images */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-inline {
+  text-align: 199;
+}
+
+</style>
+</div>
+
+
+<div id="contact" class="text-center">  
+	  <h2>CONTACT</h2>
+	  <ul class="list-inline">
+	  <li>
+	  	<a href="mailto:tidianiguisse@yahoo.com" class="btn btn-default btn-lg"><i class= "fa fa-Email fa-fw"></i> <span class="Email">Email</span></a>
+	  	<a href="https://github.com/tguisse" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="Github">Github</span></a>
+
+	  </li>
+	
+</div>
+
+</body>
+</html>
