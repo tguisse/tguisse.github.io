@@ -12,8 +12,8 @@ function clicked() {
 	
 	if(user.value == "admin" && pass.value == "pass") {
 		
-			window.alert("Welcome, Please close this tab to access my github Page");
-			window.open("https://tguisse.github.io/mysite/");
+			window.alert("Welcome, Please close this tab to access my Resume");
+			window.open("https://github.com/tguisse/tguisse.github.io/blob/master/Public%20Resume_Tidiani%20Guisse.pdf");
 
 		}  
   /* This ensure that the user enter both the password and username  */    
